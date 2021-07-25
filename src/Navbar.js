@@ -34,7 +34,7 @@ export default function Navbar() {
           </IconButton>
           <a className={classes.navlink} href="/">
             <Typography variant="h6" className={classes.title}>
-              MY TRAVEL APP
+              TRAVEL APP
             </Typography>
           </a>
         </Toolbar>
