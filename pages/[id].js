@@ -39,11 +39,10 @@ export async function getStaticProps({ params }) {
   // Call an external API endpoint to get an attraction by id
   const res = await fetch(`https://www.mecallapi.com/api/attractions/${params.id}`)
   const data = await res.json()
-  const attraction = data.attraction
 
   // By returning { props: { data } }, the AttractionPage component
   // will receive `data` as a prop at build time
-  return { props: { attraction } }
+  return { props: { data } }
 }
 
 export default AttractionPage
